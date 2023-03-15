@@ -1,4 +1,5 @@
-NextJS Full NFT Marketplace Application Running with Alchemy SDK. Deploy With Smart Contracts Attached
+NextJS Full NFT Marketplace Application Running with Alchemy SDK. 
+Deployed With Smart Contracts Attached
 
 Project architecture
 
