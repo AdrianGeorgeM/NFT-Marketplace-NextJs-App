@@ -5,9 +5,15 @@
 /.pnp
 .pnp.js
 
+
 # testing
 /coverage
 
+### VisualStudioCode ###
+.vscode/   
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
 # next.js
 /.next/
 /out/
