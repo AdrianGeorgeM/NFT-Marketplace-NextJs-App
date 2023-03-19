@@ -7,7 +7,7 @@ export default function Home() {
 	// Optional Config object, but defaults to demo api-key and eth-mainnet.
 
 	const settings = {
-		apiKey: 'Guj4CEQmHkJqmhxlPDH-59dK4bTb3GyL',
+		apiKey: 'sufd7iQIMIlROiEZyAG17IGvWjKl9470',
 		network: Network.ETH_GOERLI,
 	};
 
