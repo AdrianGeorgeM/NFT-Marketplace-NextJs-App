@@ -1,4 +1,5 @@
 import { ethers } from 'ethers';
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import Web3Modal from 'web3modal';
 import { useRouter } from 'next/router';
@@ -162,7 +163,7 @@ export default function Home(props) {
 						>
 							{resellnft.map((nft, i) => (
 								<div key={i}>
-									<img src={nft.image} key={i} />
+									<Image src={nft.image} key={i} alt='' />
 									<Text h4>TokenId:{' ' + nft.tokenId}</Text>
 								</div>
 							))}
@@ -220,12 +221,13 @@ export default function Home(props) {
 											<Text>{nft.description}</Text>
 											<p style={{ fontSize: '30px' }}>
 												{nft.value}{' '}
-												<img
+												<Image
 													src='matic.svg'
 													style={{
 														width: '40px',
 														height: '35px',
 													}}
+													alt=''
 												/>
 											</p>
 											<Button
@@ -275,12 +277,13 @@ export default function Home(props) {
 										<Text wrap='wrap'>{nft.description}</Text>
 										<Text style={{ fontSize: '30px' }}>
 											{nft.price}
-											<img
+											<Image
 												src='matic.svg'
 												style={{
 													width: '40px',
 													height: '35px',
 												}}
+												alt=''
 											/>
 										</Text>
 										<Button
