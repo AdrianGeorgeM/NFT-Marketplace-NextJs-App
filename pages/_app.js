@@ -32,72 +32,74 @@ const theme = createTheme({
 		fonts: {},
 	},
 });
+//collons are used to define the color of the text
 
 function MyApp({ Component, pageProps }) {
-	return;
-	<NextUIProvider theme={theme}>
-		<Navbar variant='sticky'>
-			<Navbar.Brand>
-				<Logo />
-				<Text
-					color='inherit'
-					hideIn='xs'
-					size={30}
-					css={{ fontWeight: '600', textShadow: '0px 0px 3px #ffffff' }}
-				>
-					Net2Dev MarketPlace
-				</Text>
-			</Navbar.Brand>
-			<Navbar.Content activeColor='secondary' hideIn='xs' variant='underline'>
-				<Link
-					style={{
-						fontFamily: 'SF Pro Display',
-						fontSize: '25px',
-						color: 'white',
-						fontWeight: '500',
-					}}
-					href='/'
-				></Link>
-				<a
-					style={{
-						fontFamily: 'SF Pro Display',
-						fontSize: '25px',
-						color: 'white',
-						fontWeight: '500',
-					}}
-					href='/create'
-				>
-					Create
-				</a>
-				<a
-					style={{
-						fontFamily: 'SF Pro Display',
-						fontSize: '25px',
-						color: 'white',
-						fontWeight: '500',
-					}}
-					href='/mint'
-				>
-					Minter
-				</a>
-				<a
-					style={{
-						fontFamily: 'SF Pro Display',
-						fontSize: '25px',
-						color: 'white',
-						fontWeight: '500',
-					}}
-					href='/portal'
-				>
-					My Portal
-				</a>
-			</Navbar.Content>
-		</Navbar>
-		<Component {...pageProps} />
-		<Footer>
-			<Footer />
-		</Footer>
-	</NextUIProvider>;
+	return (
+		<NextUIProvider theme={theme}>
+			<Navbar variant='sticky'>
+				<Navbar.Brand>
+					<Logo />
+					<Text
+						color='inherit'
+						hideIn='xs'
+						size={30}
+						css={{ fontWeight: '600', textShadow: '0px 0px 3px #ffffff' }}
+					>
+						Adrian MarketPlace
+					</Text>
+				</Navbar.Brand>
+				<Navbar.Content activeColor='secondary' hideIn='xs' variant='underline'>
+					<Link
+						style={{
+							fontFamily: 'SF Pro Display',
+							fontSize: '25px',
+							color: 'white',
+							fontWeight: '500',
+						}}
+						href='/'
+					></Link>
+					<a
+						style={{
+							fontFamily: 'SF Pro Display',
+							fontSize: '25px',
+							color: 'white',
+							fontWeight: '500',
+						}}
+						href='/create'
+					>
+						Create
+					</a>
+					<a
+						style={{
+							fontFamily: 'SF Pro Display',
+							fontSize: '25px',
+							color: 'white',
+							fontWeight: '500',
+						}}
+						href='/mint'
+					>
+						Minter
+					</a>
+					<a
+						style={{
+							fontFamily: 'SF Pro Display',
+							fontSize: '25px',
+							color: 'white',
+							fontWeight: '500',
+						}}
+						href='/portal'
+					>
+						My Portal
+					</a>
+				</Navbar.Content>
+			</Navbar>
+			<Component {...pageProps} />
+			<Footer>
+				<Footer />
+			</Footer>
+		</NextUIProvider>
+	);
 }
 
 export default MyApp;
