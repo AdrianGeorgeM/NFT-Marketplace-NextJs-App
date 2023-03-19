@@ -103,7 +103,7 @@
 				"type": "uint256"
 			}
 		],
-		"name": "n2DMarketSale",
+		"name": "MarketSale",
 		"outputs": [],
 		"stateMutability": "payable",
 		"type": "function"
@@ -245,7 +245,7 @@
 						"type": "bool"
 					}
 				],
-				"internalType": "struct n2DMarket.VaultItem[]",
+				"internalType": "struct DMarket.VaultItem[]",
 				"name": "",
 				"type": "tuple[]"
 			}
