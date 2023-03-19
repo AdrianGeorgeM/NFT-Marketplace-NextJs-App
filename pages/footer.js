@@ -1,6 +1,7 @@
 import 'sf-font';
 import { Text, Row, Spacer, Container, Col } from '@nextui-org/react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
 	const footer1 = [
@@ -71,12 +72,13 @@ export default function Footer() {
 							{footer1.map((item, idx) => {
 								return (
 									<a key={idx} href={item.url}>
-										<img
+										<Image
 											src={item.img}
 											style={{ marginRight: '1px' }}
 											width='150px'
 											height='50px'
-										></img>
+											alt=''
+										/>
 									</a>
 								);
 							})}
@@ -87,27 +89,27 @@ export default function Footer() {
 						<ul>
 							{footer2.map((item, idx) => {
 								return (
-									<img
+									<Image
 										key={idx}
 										src={item.img}
 										style={{ marginRight: '5px' }}
 										width='200px'
 										height='50px'
-									></img>
+										alt=''
+									/>
 								);
 							})}
 						</ul>
 					</Col>
 					<Col style={{ marginLeft: '5px' }}>
 						<Text h4>Powered by</Text>
-						<a href=''>
-							<img
-								src='alchemyblue.png'
-								style={{
-									width: '200px',
-								}}
-							/>
-						</a>
+						<Image
+							src='alchemyblue.png'
+							alt=''
+							style={{
+								width: '200px',
+							}}
+						/>
 					</Col>
 				</Row>
 			</Container>
